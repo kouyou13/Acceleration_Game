@@ -1,0 +1,39 @@
+<!-- 参考：https://kkblab.com/make/javascript/acc.html -->
+<!-- 参考：https://www.otwo.jp/blog/canvas_sakura/ -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/img/busu.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/busu.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>現実から逃げろ！！</title>
+  </head>
+  <body>
+    <div id="start_menu">
+      <img class="title" src="./img/title.png" alt="">
+      <img id="chara" src="./img/busu.png" alt="">
+      <img id="start_btn" src="./img/start.png" alt="">
+    </div>
+
+    <div id="game_menu">
+      <img class="title" src="./img/title.png" alt="">
+      <h5 id="score_text"></h5>             <!-- スコアを表示するdiv要素 -->
+      <canvas id="canvas" width="340" height="580"></canvas>  <!-- ボールを描くcanvas要素 -->
+    </div>
+
+    <div id="end_game">
+      <div id="end_menu">
+        <img id="comment" src="./img/comment.png" alt="">
+        <h5 id="finish_score"></h5>
+        <img id="fin_random" src="" alt="">
+        <img id="restart_btn" src="./img/restart.png" alt="">
+      </div>
+    </div>
+    <script type="module" src="./js/start.js"></script>
+    <!-- <script src="./js/game.js"></script> -->
+    <!-- <script src="./js/finish.js"></script> -->
+  </body>
+</html>
